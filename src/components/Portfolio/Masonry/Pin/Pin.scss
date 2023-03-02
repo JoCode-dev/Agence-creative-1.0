@@ -1,0 +1,15 @@
+.app__pin {
+    flex: 1;
+    margin: 1vh;
+}
+
+.app__pin-image {
+    border-radius: 1.4vh;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

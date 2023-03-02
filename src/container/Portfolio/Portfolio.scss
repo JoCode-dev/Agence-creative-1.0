@@ -1,0 +1,136 @@
+.app__portfolio {
+    flex: 1;
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../../assets/images/light-desktop.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.app__portfolio-masonry {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding: 1vh;
+
+    .app__portfolio-masonry-header {
+        padding: 3vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+            width: 40vh;
+            height: 20vh;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: var(--white-color);
+            font-size: 8vh;
+            font-family: 'Montserrat-Bold';
+            letter-spacing: -0.3vh;
+        }
+    }
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* Mobile devices */
+@media (min-width : 220px) and (max-width : 480px) {
+    .app__portfolio {
+        background-image: url('../../assets/images/light-mobile.webp');
+
+    }
+
+    .app__portfolio-masonry {
+
+        .app__portfolio-masonry-header {
+            padding: 2vh;
+            height: 10vh;
+
+            img {
+                width: 12vh;
+                aspect-ratio: 1/2;
+                object-fit: contain;
+            }
+
+            h1 {
+                font-size: 4vh;
+            }
+        }
+    }
+}
+
+/* iPads, Tablets */
+@media (min-width : 481px) and (max-width : 768px) {
+    .app__portfolio {
+        background-image: url('../../assets/images/light-mobile.webp');
+
+    }
+
+    .app__portfolio-masonry {
+
+        .app__portfolio-masonry-header {
+            padding: 2vh;
+            height: 10vh;
+
+            img {
+                width: 15vh;
+                aspect-ratio: 1/2;
+                object-fit: contain;
+            }
+
+            h1 {
+                font-size: 5vh;
+            }
+        }
+    }
+}
+
+/* Small screens, laptops */
+@media (min-width : 769px) and (max-width : 1024px) {
+    .app__portfolio {
+        background-image: url('../../assets/images/light-desktop.webp');
+
+    }
+
+    .app__portfolio-masonry {
+
+        .app__portfolio-masonry-header {
+            img {
+                width: 20vh;
+                aspect-ratio: 1/2;
+                object-fit: contain;
+            }
+
+            h1 {
+                font-size: 7vh;
+            }
+        }
+    }
+}
+
+/* Desktops, large screens */
+@media (min-width : 1025px) and (max-width : 1200px) {
+    .app__portfolio {
+        background-image: url('../../assets/images/light-desktop.webp');
+
+    }
+}
+
+/* Extra large screens, TV */
+@media (min-width : 1201px) {
+    .app__portfolio {
+        background-image: url('../../assets/images/light-ultra.webp');
+
+    }
+}
